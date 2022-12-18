@@ -56,9 +56,9 @@ git clone https://github.com/Krafolis/Thyplant.git
 - package.json
 - package-lock.json
 
-5. Go to folder Web
+5. Go to folder Project Thyplant
 ```
-cd (web directory)
+cd (Project Thyplant directory)
 ```
 
 6. Run with Flask Environment
