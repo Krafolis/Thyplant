@@ -33,7 +33,7 @@ Kesehatan tanaman seringkali memiliki permasalahan yang diakibatkan oleh beberap
 - **CNN (Convolutional Neural Network)**, dengan hasil accuracy 96% dan validation accuracy 94%
 
 ## Model Deteksi
-- [Model Plant Health](https://github.com/capstone-team-c22-057/Machine_Learning/blob/main/Plant_Health_Detection.ipynb)
+- [Model Plant Health](https://github.com/Krafolis/Thyplant/blob/main/Plant_Health_Detection.ipynb)
 
 ## Dataset
 - [Tanaman](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
