@@ -30,7 +30,7 @@ Kesehatan tanaman seringkali memiliki permasalahan yang diakibatkan oleh beberap
 - Gunicorn 
 
 ## Algoritma
-- **CNN (Contvulitional Neural Network)**, dengan hasil accuracy 96% dan validation accuracy 94%
+- **CNN (Convolutional Neural Network)**, dengan hasil accuracy 96% dan validation accuracy 94%
 
 ## Model Deteksi
 - [Model Plant Health](https://github.com/capstone-team-c22-057/Machine_Learning/blob/main/Plant_Health_Detection.ipynb)
