@@ -1,0 +1,875 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+  overflow-x: hidden;
+}
+.img-dash {
+  margin-bottom: 50px;
+  margin-right: 70px;
+}
+.img-dash1 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+
+.para {
+  font-size: 22px;
+  text-align: left;
+  color: black;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  padding-right: 220px;
+  margin-left: 5px;
+}
+
+.dashh {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  margin: 0;
+}
+.but {
+  margin: 133px;
+  margin-left: 60px;
+  margin-right: 10px;
+  width: 545px;
+  height: 425px;
+  box-shadow: 200px;
+  border-radius: 30px;
+}
+
+.home .but > p {
+  color: #5b5a5a;
+  font-size: 22px;
+  margin-top: 45px;
+  margin-left: 56px;
+  margin-right: 56px;
+  text-align: center;
+  margin-bottom: 66px;
+}
+.home .but > h3 {
+  color: #393838;
+  font-size: 35px;
+  padding-top: 35px;
+  margin-top: 45px;
+}
+.home h2 {
+  font-size: 73px;
+  color: #454545;
+  font-family: "Poppins", sans-serif;
+}
+.dashboard {
+  margin-top: 100px;
+  width: 100%;
+}
+nav {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-around;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 20%;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-size: 23px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: auto;
+}
+nav ul li a:hover {
+  color: rgb(131, 129, 129);
+}
+.logo h4 a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.menu-toogle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toogle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toogle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.menu-toogle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toogle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toogle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toogle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toogle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+.text-box {
+  color: #1c2b1f;
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 80px;
+}
+.im {
+  margin-top: 50px;
+}
+.text-box1 {
+  color: #1c2b1f;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.detection-type-selection {
+  margin: 5px;
+  gap: 50px;
+  padding: 10px 470px;
+}
+.detection-type-selection button {
+  border-radius: 20px;
+  font-size: 30px;
+  font-style: bold;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 0.5px rgb(127, 129, 128);
+  border-style: double;
+}
+.detection-type-selection-child:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.detection-input {
+  width: 81%;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+.before-choose-display {
+  margin-top: 10px;
+}
+
+.input-image-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.plant-health-display {
+  border-radius: 20px;
+  height: 645px;
+}
+.plant-health-display h2 {
+  padding-top: 25px;
+  font-size: 45px;
+}
+
+.image-detection {
+  background-color: rgb(43, 123, 96);
+  color: white;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 20px;
+  width: 20%;
+  padding: 11px;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.image-detection:hover {
+  background-color: rgb(143, 211, 188);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.image-delete {
+  background-color: darkred;
+  color: white;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 20px;
+  width: 20%;
+  padding: 11px;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.image-delete:hover {
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+}
+
+.detection-result {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  width: 80%;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 40px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.detection-result-detail {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+.text-detection {
+  text-align: center;
+}
+.image-result {
+  display: flex;
+  flex-basis: 65%;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 40px;
+  margin-left: -10px;
+}
+
+.detection-result-info {
+  display: inline-block;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+.l {
+  color: white;
+}
+.detail-result {
+  margin-top: 10px;
+}
+
+.detection-image {
+  border-radius: 20px;
+  width: 380px;
+  height: 400px;
+}
+.detection-image-result {
+  width: 380px;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.logo-img {
+  margin-left: 900px;
+  margin-top: 11px;
+  height: 35px;
+}
+
+.head-img {
+  width: 100%;
+  height: 895px;
+  object-fit: cover;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+.team {
+  margin-left: 490px;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.footer-basic {
+  padding: 20px;
+  background-color: #3a3a3a;
+  color: rgb(255, 255, 255);
+  margin-top: auto;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.service p {
+  text-align: justify;
+}
+.service {
+  background-color: rgb(176, 194, 186);
+}
+
+@media screen and (max-width: 1165px) {
+  .menu-toogle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    padding-left: 245px;
+    top: 0;
+    flex-direction: column;
+    height: 50vh;
+    align-items: right;
+    justify-content: space-evenly;
+    z-index: -1;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .dashboard {
+    display: none;
+  }
+  .detail-result img {
+    width: 310px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .image-container img {
+    width: 310px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .detection-type-selection {
+    margin: 0px;
+    gap: 25px;
+    padding: 5px 170px;
+  }
+  .detection-result {
+    display: flex;
+    flex-direction: col;
+    flex-basis: 100%;
+    width: 87%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .detection-input {
+    width: 95%;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px auto;
+  }
+  .image-delete {
+    background-color: darkred;
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 20%;
+    padding: 11px;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .image-detection {
+    background-color: rgb(43, 123, 96);
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 20%;
+    padding: 11px;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .plant-health-display {
+    border-radius: 20px;
+    height: 545px;
+  }
+  .img-card {
+    height: 200px;
+    width: 200x;
+  }
+  .team {
+    margin-left: 245px;
+  }
+  .input-image-button {
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 966px) {
+  .menu-toogle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    padding-left: 205px;
+    top: 0;
+    flex-direction: column;
+    height: 50vh;
+    align-items: right;
+    justify-content: space-evenly;
+    z-index: -1;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .input-image-button {
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 50px;
+  }
+  nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .dashboard {
+    display: none;
+  }
+  .detail-result img {
+    width: 310px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .image-container img {
+    width: 310px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .detection-type-selection {
+    margin: 0px;
+    gap: 25px;
+    padding: 5px 170px;
+  }
+  .detection-result {
+    display: flex;
+    flex-basis: 100%;
+    width: 87%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .detection-input {
+    width: 95%;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px auto;
+  }
+  .plant-health-display {
+    border-radius: 20px;
+    height: 545px;
+  }
+  .img-card {
+    height: 200px;
+    width: 200x;
+  }
+  .team {
+    margin-left: 245px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .menu-toogle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    padding-left: 125px;
+    top: 0;
+    flex-direction: column;
+    height: 50vh;
+    align-items: right;
+    justify-content: space-evenly;
+    z-index: -1;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .dashh {
+    display: none;
+  }
+  .dashboard {
+    display: none;
+  }
+  .but {
+    margin-top: 20px;
+  }
+  .detail-result img {
+    width: 260px;
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .image-container img {
+    width: 260px;
+    height: 250px;
+    margin-top: 5px;
+  }
+  .input-image-button {
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+  }
+  .plant-health-display {
+    border-radius: 20px;
+    height: 470px;
+  }
+  .plant-health-display h2 {
+    font-size: 36px;
+  }
+  .detection-type-selection {
+    margin: 0px;
+    gap: 25px;
+    padding: 1px 60px;
+    font-size: 20px;
+  }
+  .detection-type-selection button {
+    font-size: 25px;
+    padding: 11px;
+  }
+  .detection-type {
+    padding-top: 90px;
+  }
+  .team {
+    margin-left: 157px;
+  }
+  .input-image-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .image-detection {
+    background-color: rgb(43, 123, 96);
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .image-delete {
+    background-color: darkred;
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .menu-toogle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    padding-left: 95px;
+    top: 0;
+    flex-direction: column;
+    height: 50vh;
+    align-items: right;
+    justify-content: space-evenly;
+    z-index: -1;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .dashh {
+    display: none;
+  }
+  .dashboard {
+    display: none;
+  }
+  .but {
+    margin-top: 20px;
+  }
+  .detail-result img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .image-container img {
+    width: 150px;
+    height: 150px;
+  }
+  .plant-health-display {
+    border-radius: 20px;
+    height: 330px;
+    font-size: 10px;
+  }
+  .plant-health-display h2 {
+    font-size: 20px;
+  }
+  .detection-type-selection {
+    margin: 0px;
+    gap: 25px;
+    padding: 5px 55px;
+  }
+  .detection-type-selection p {
+    font-size: 14px;
+  }
+  .team {
+    margin-left: 112px;
+  }
+  .image-detection {
+    background-color: rgb(43, 123, 96);
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 12px;
+  }
+  .image-delete {
+    background-color: darkred;
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 12px;
+  }
+  .input-image-button {
+    margin-top: 10px;
+    height: 30px;
+  }
+  .detection-input {
+    width: 81%;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px auto;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .menu-toogle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    padding-left: 45px;
+    top: 0;
+    flex-direction: column;
+    height: 50vh;
+    align-items: right;
+    justify-content: space-evenly;
+    z-index: -1;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .dashh {
+    display: none;
+  }
+  .dashboard {
+    display: none;
+  }
+  .but {
+    margin-top: 20px;
+  }
+  .detail-result img {
+    width: 170px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .image-container img {
+    width: 170px;
+    height: 150px;
+  }
+  .input-image-button {
+    margin-top: 10px;
+    padding-left: 10px;
+    height: 10px;
+    width: 10px;
+  }
+  .plant-health-display {
+    border-radius: 20px;
+    height: 360px;
+  }
+  .plant-health-display h2 {
+    font-size: 22px;
+  }
+  .detection-type-selection {
+    margin: 0px;
+    gap: 25px;
+    padding: 5px 70px;
+  }
+  .detection-type-selection button {
+    padding: 0px;
+    font-size: 20px;
+  }
+  .team {
+    margin-left: 15px;
+  }
+  .image-detection {
+    background-color: rgb(43, 123, 96);
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 13px;
+  }
+  .image-delete {
+    background-color: darkred;
+    color: white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 13px;
+  }
+  .input-image-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+  }
+}

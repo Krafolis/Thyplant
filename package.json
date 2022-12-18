@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "name": "plant",
+  "description": "<ul id=\"fruit-freshness-list\" align=\"left\">\r                     <li>Apel</li>\r                     <li>Pisang</li>\r                     <li>Pare</li>\r                     <li>Paprika</li>\r                     <li>Jeruk</li>\r                     <li>Tomat</li>\r  </ul>",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capstone-team-c22-057/Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/capstone-team-c22-057/Web/issues"
+  },
+  "homepage": "https://github.com/capstone-team-c22-057/Web#readme"
+}
