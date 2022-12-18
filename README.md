@@ -30,8 +30,7 @@ Kesehatan tanaman seringkali memiliki permasalahan yang diakibatkan oleh beberap
 - Gunicorn 
 
 ## Algoritma
-contvulitional  neural network __CNN__
-dengan hasil accuracy dan val accuracy pada deteksi buah adalah 96% sedengkan pada deteksi tanaman accuracy 96% dan val accuracy 94%
+- **CNN (Contvulitional Neural Network)**, dengan hasil accuracy 96% dan validation accuracy 94%
 
 ## Model Deteksi
 - [Model Plant Health](https://github.com/capstone-team-c22-057/Machine_Learning/blob/main/Plant_Health_Detection.ipynb)
@@ -56,7 +55,6 @@ git clone https://github.com/Krafolis/Thyplant.git
 - index.html
 - package.json
 - package-lock.json
-- README.md
 
 5. Go to folder Web
 ```
